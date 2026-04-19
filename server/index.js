@@ -7,14 +7,21 @@ const authRouts = require('./routes/auth.router.js')
 
 dotenv.config();
 
+ const authRoutes = require('./routes/auth');
+// const eventRoutes = require('./routes/events');
+// const bookingRoutes = require('./routes/bookings');
+
 const app = express()
-app.use(cors());
 app.use(express.json());
 
 
 //Routes
 
-app.use('/api/auth',authRouts);
+ app.use('/api/auth', authRoutes);
+// app.use('/api/events', eventRoutes);
+// app.use('/api/bookings', bookingRoutes);
+
+
 
 //connect top mongobd
 mongoose.connect(process.env.MONGODB_URI)
@@ -24,11 +31,6 @@ mongoose.connect(process.env.MONGODB_URI)
 .catch(()=>{
     console.log("Error connecting to MongoDb",error );
 })
-
-
-
-
-
 
 
 //const PORT = 5000
