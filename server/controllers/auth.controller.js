@@ -107,3 +107,5 @@ exports.verifyOtp=async (req, res) =>{
         token:genertaeToken(user._id,user.role)
     })
 }
+
+//add nothing
