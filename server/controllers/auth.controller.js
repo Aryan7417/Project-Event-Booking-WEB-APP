@@ -108,4 +108,3 @@ exports.verifyOtp=async (req, res) =>{
     })
 }
 
-//add nothing
