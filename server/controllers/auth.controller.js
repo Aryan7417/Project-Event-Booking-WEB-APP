@@ -37,7 +37,7 @@ exports.regiterUser= async(req,res)=>{
         })
 
         
-
+  
         }
      catch(error){
         res.status(400).json({error:error.message})
@@ -45,7 +45,7 @@ exports.regiterUser= async(req,res)=>{
 };
 
 
-//-------------------login user---------------
+//-----------------------------login user--------------------------------------
 
 
 exports.loginUser = async (req,res)=>{
