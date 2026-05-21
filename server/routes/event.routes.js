@@ -23,4 +23,5 @@ router.delete('/:id',protect, admin,deleteEvent)
 
 module.exports = router;
 
-//noyhing
+//noyhing nothis 
+//thio os the control of the contact three is thefinal value

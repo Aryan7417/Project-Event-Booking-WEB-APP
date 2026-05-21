@@ -8,4 +8,3 @@ router.post('/login',loginUser);
 router.post('/verifyOTP',verifyOtp)
 
 module.exports =router;
-
