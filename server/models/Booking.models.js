@@ -28,4 +28,4 @@ const bookingSchema = new mongoose.Schema({
     }
 },{timeseries:true})
 
-module.exports=mongoose.module('Booking',bookingSchema)
+module.exports = mongoose.model('Booking',bookingSchema)
