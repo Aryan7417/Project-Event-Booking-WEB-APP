@@ -15,4 +15,5 @@ api.interceptors.request.user((condfig)=>{
     return condfig;
 })
 
-export default api;
+export default api
+
